@@ -1,0 +1,9 @@
+name: FSCommands
+version: '${project.version}'
+main: net.forscore.commands.Main
+api-version: 1.19
+authors: [ AndreyBali ]
+description: Команды (/fs)
+website: forscore.ru
+commands:
+  fs: {}
