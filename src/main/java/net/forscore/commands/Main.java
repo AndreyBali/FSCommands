@@ -10,14 +10,11 @@ import java.io.File;
 
 public final class Main extends JavaPlugin {
     private static Main Instance;
-    FileConfiguration config = getConfig();
     @Override
     public void onEnable() {
         Instance = this;
         new FScommand(this);
         Bukkit.getPluginManager().registerEvents(new Listener(), this);
-//        if(!config.contains("allowEnd")) saveDefaultConfig();
-//        else GUIManager.allowEnd = (Boolean) config.get("allowEnd");
 
         getLogger().info("Plugin successfully started up!");
     }
@@ -31,7 +28,4 @@ public final class Main extends JavaPlugin {
     public static Main getInstance() {
         return Instance;
     }
-//    public void menu(CommandSender sender){
-//        GUIManager.openInventory((HumanEntity) sender);
-//    }
 }
